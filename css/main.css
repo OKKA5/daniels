@@ -1,0 +1,684 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(100, 100, 100, 0.7);
+    z-index: 100000;
+}
+
+header .nav-item .nav-link {
+    color: #f0f0f0;
+}
+
+.navbar-brand {
+    color: #f0f0f0;
+}
+
+.content-2 {
+    width: 50%;
+}
+
+.about-me .container {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-item a {
+    position: relative;
+}
+
+.nav-link {
+    width: fit-content;
+}
+
+.nav-item .nav-link {
+    position: relative;
+}
+
+header .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+    height: 2px;
+    background-color: #eeeeee;
+    width: 0;
+    transition-duration: 0.3s;
+}
+
+.portfolio .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+    height: 2px;
+    background-color: #000000;
+    width: 0;
+    transition-duration: 0.3s;
+}
+
+.nav-item .nav-link.active::after {
+    width: 85%;
+}
+
+.content-1 i {
+    padding: 10px;
+    background-color: #030303;
+    border-radius: 50%;
+}
+
+.section-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./imgs/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    width: 70%;
+}
+
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar-1 {
+    height: 25px;
+    width: 95%;
+    background-color: black;
+    animation: progress-1 3s;
+    animation-iteration-count: 1;
+    border-radius: 5px;
+}
+
+.progress-bar-2 {
+    height: 25px;
+    width: 80%;
+    background-color: black;
+    animation: progress-2 3s;
+    animation-iteration-count: 1;
+    border-radius: 5px;
+}
+
+.progress-bar-3 {
+    height: 25px;
+    width: 90%;
+    background-color: black;
+    animation: progress-3 3s;
+    animation-iteration-count: 1;
+    border-radius: 5px;
+}
+
+@keyframes progress-1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progress-3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.about-me img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-me .img {
+    position: relative;
+}
+
+.about-me .img::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -35px;
+    right: 25%;
+    z-index: -1;
+}
+
+
+.mont-900 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.mont-100 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+.bg-grey {
+    background-color: rgb(168, 168, 168);
+}
+
+.pt-10 {
+    padding-top: 100px;
+}
+
+.special {
+    background-color: black;
+    color: #f0f0f0;
+}
+
+.special:hover {
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}
+
+.border-circle {
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    width: 120px;
+}
+
+.card i {
+    transition-duration: 0.5s;
+}
+
+.services .card:hover i {
+    background-color: black;
+    color: #f0f0f0;
+    border-color: #3498db;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.mgc {
+    margin: 0px 0px 48px;
+
+}
+
+.pgc {
+    padding: 64px 48px;
+}
+
+.pgc-2 {
+    padding: 40px 20px;
+}
+
+.p-top {
+    padding-top: 64px;
+}
+
+.p-top-100 {
+    padding-top: 100px;
+}
+
+.mb {
+    margin-bottom: 64px;
+}
+
+.bg-g {
+    background-color: rgb(224, 224, 224);
+}
+
+.services .content-3 h3 {
+    position: relative;
+    margin: auto;
+}
+
+.services .content-3 h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.services h3 {
+    width: fit-content;
+}
+
+
+.b-shadow {
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio .content-4 h3 {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+
+.portfolio .content-4 h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.content-4 {
+    margin: auto;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.img-container {
+    position: relative;
+    transition-duration: 0.5;
+}
+
+.over {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    top: 15px;
+    background-color: #fff;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.img-container :hover {
+    opacity: 1;
+    top: 5px;
+}
+
+.over i {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.over i:hover {
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: #151313;
+}
+
+.portfolio .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    isolation: isolate;
+}
+
+.portfolio .nav-tabs .nav-link:focus {
+    position: relative;
+}
+
+.portfolio .nav-tabs .nav-link:focus::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    height: 2px;
+    background-color: #030303;
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.portfolio .nav-tabs .nav-link {
+    width: fit-content;
+    color: black;
+}
+
+.portfolio .nav-tabs .nav-link .active {
+    position: relative;
+}
+
+.portfolio .nav-tabs .nav-link .active::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    height: 2px;
+    background-color: #030303;
+    width: 100%;
+}
+
+.clients {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.clients .carousel-item img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.vh-50 {
+    height: 500px;
+}
+
+.vh-60 {
+    height: 700px;
+}
+
+.clients h3 {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+.clients .content-5 h3 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+
+}
+
+.clients .content-5 h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.text-g {
+    color: #748182;
+}
+
+.text-g-1 {
+    color: #343434;
+}
+
+.text-g-2 {
+    color: #888888;
+}
+
+.max-w {
+    max-width: 1200px;
+}
+
+.our-team h3 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+
+}
+
+.our-team h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team img {
+    width: 100%;
+}
+
+.our-team .img-container:hover img {
+    scale: 1.1;
+    transition-duration: 0.3s;
+}
+
+.our-team .card:hover .over-2 {
+    transform: rotateY(360deg);
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    top: 5px;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+.our-team .img-container:hover {
+    transition-duration: 0.5;
+}
+
+.our-team .img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.over-2 {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition-duration: 0.5s;
+    z-index: 10;
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.over-2 i {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.over-2 i:hover {
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.contact-us h3 {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.contact-us h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(./imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-us i {
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(194, 194, 194);
+    width: fit-content;
+    border-radius: 50%;
+}
+
+.contact-us .card:hover i {
+    color: white;
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+.contact-us .card {
+    transition-duration: 0.3s;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.fir input {
+    width: 50%;
+}
+
+.fir {
+    gap: 50px;
+}
+
+@keyframes designer {
+
+    0% {
+        width: 0;
+    }
+
+    12.5% {
+        width: calc(18px * 8);
+    }
+
+    25%,
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes developer {
+
+    0%,
+    33.3%,
+    66%,
+    100% {
+        width: 0;
+    }
+
+    49.5% {
+        width: calc(18px * 9);
+    }
+}
+
+@keyframes larry {
+
+    0%,
+    66%,
+    100% {
+        width: 0;
+    }
+
+    84.5% {
+        width: calc(18px * 13);
+    }
+}
+
+.content-1 span:nth-of-type(1) {
+    animation: designer 6s infinite;
+}
+
+.content-1 h2 span:nth-of-type(2) {
+    animation: developer 6s infinite;
+}
+
+.content-1 h2 span:nth-of-type(3) {
+    animation: larry 6s infinite;
+}
+
+
+.content-1 h2 span {
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: -9px;
+}
+
+.content-1 h2 {
+    font-family: "Roboto Mono", monospace;
+}
+form .btn{
+    background-color: #000000;
+    color: #fff;
+    transition-duration: 0.2s;
+}
+form >input:hover {
+    color: black;
+    background-color:#fff;
+    border: solid 1px black;
+    transition-duration: 0.2s;
+}
+.tw{
+    text-wrap: nowrap;
+}
+h3{
+    isolation: isolate;
+}

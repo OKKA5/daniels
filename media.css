@@ -1,0 +1,27 @@
+@media screen and (max-width:1000px) {
+    .about-me .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me .img{
+        width: 50%;
+
+    }
+    .about-me .content-2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    .fir{
+        flex-direction: column;
+    }
+    .about-me img{
+        width: 100%;
+    }
+    form .fir input{
+        width: 100%;
+    }
+    form .fir{
+        gap: 5px;
+    }
+}
